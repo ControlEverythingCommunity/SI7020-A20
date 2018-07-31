@@ -47,7 +47,7 @@ void loop()
     }
     
     // Convert the data
-    float humidity  = ((data[0] * 256.0) + data[3]);
+    float humidity  = ((data[0] * 256.0) + data[1]);
     humidity = ((125 * humidity) / 65536.0) - 6;
 
     // Start I2C transmission
